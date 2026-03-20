@@ -1,6 +1,6 @@
 ---
 name: prezdev
-description: Java code style guardrails for clean code refactors. Use when writing or reviewing Java code to enforce imports over FQN, top-down method order, shared utility extraction, and consistent English code style.
+description: Java code style guardrails for clean code refactors. Use when writing or reviewing Java code to enforce imports over FQN, top-down method order, shared utility extraction, and English code style, while allowing logs in Spanish.
 ---
 
 # Java Clean Rules
@@ -21,8 +21,9 @@ Exception: string literals that must contain full class names (for example JAAS 
 If method `A` calls method `B`, `B` must be declared below `A`.
 Public entry points first, private helpers after.
 
-3. Keep code in English.
-Class names, method names, variable names, comments, and log messages should be in English.
+3. Keep code in English, always.
+Class names, method names, variable names, comments, and any code-facing text must be in English.
+Log messages are the only exception and may be written in Spanish when that is preferable for operators or users.
 
 4. Put `try` at the start of the method when exception handling is required.
 Avoid pre-`try` logic unless it is unavoidable (for example null guard clauses or trivial setup).
@@ -123,7 +124,8 @@ return compute();
 - No new FQN usages in method signatures or bodies.
 - No helper method defined above callers.
 - No duplicated conversion/parsing blocks in use cases, mappers, or adapters.
-- Code and logs are in English.
+- Code is always in English.
+- Log messages may be in Spanish.
 - If a method has `try/catch`, `try` starts the method body (except unavoidable guard/setup).
 - One public top-level type per file, with predictable file ordering.
 - Braces are present on all control structures.
