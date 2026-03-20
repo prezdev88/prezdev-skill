@@ -23,6 +23,7 @@ Public entry points first, private helpers after.
 
 3. Keep code in English, always.
 Class names, method names, variable names, comments, and any code-facing text must be in English.
+Package names must also be in English.
 Log messages are the only exception and may be written in Spanish when that is preferable for operators or users.
 
 4. Put `try` at the start of the method when exception handling is required.
@@ -120,11 +121,16 @@ Prefer:
 return compute();
 ```
 
+25. Keep package names in English.
+Package names must use English words only, be lowercase, and reflect the responsibility of the code.
+Avoid Spanish package names such as `utilidades`, `clases`, `aplicacion`, or similar project-local variants.
+
 ## Review Checklist
 - No new FQN usages in method signatures or bodies.
 - No helper method defined above callers.
 - No duplicated conversion/parsing blocks in use cases, mappers, or adapters.
 - Code is always in English.
+- Package names are in English.
 - Log messages may be in Spanish.
 - If a method has `try/catch`, `try` starts the method body (except unavoidable guard/setup).
 - One public top-level type per file, with predictable file ordering.
