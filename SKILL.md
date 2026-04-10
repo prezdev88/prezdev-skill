@@ -62,6 +62,7 @@ Do not compress multiple statements or multiple variable declarations into a sin
 - No space between a method name and `(`.
 - Space after commas.
 - Space around binary operators.
+- Use blank lines to separate logical blocks (e.g., after an `if` block and before a `return` or another statement).
 
 13. Follow conventional Java naming.
 - Classes and interfaces: PascalCase nouns.
@@ -128,6 +129,9 @@ Avoid Spanish package names such as `utilidades`, `clases`, `aplicacion`, or sim
 26. Use Conventional Commits.
 If you are asked to create or propose a commit, you must format the commit message according to the Conventional Commits specification (e.g., `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`).
 
+27. Use blank lines for visual separation.
+Always put a blank line after a control structure block (`if`, `for`, `while`, `switch`, `try/catch`) and before the next statement (like a `return` or another variable assignment) to improve scanability. Also, use blank lines between logically distinct groups of statements within a method.
+
 ## Review Checklist
 - No new FQN usages in method signatures or bodies.
 - No helper method defined above callers.
@@ -140,6 +144,7 @@ If you are asked to create or propose a commit, you must format the commit messa
 - Braces are present on all control structures.
 - No multi-statement lines, multi-declarations, or embedded assignments added for brevity.
 - Whitespace and brace placement are consistent and easy to scan.
+- Blank lines separate logical blocks and follow control structures.
 - Naming follows standard Java conventions and avoids cryptic abbreviations.
 - Static members are accessed through the class name.
 - Non-trivial literals are extracted to named constants.
