@@ -125,6 +125,9 @@ return compute();
 Package names must use English words only, be lowercase, and reflect the responsibility of the code.
 Avoid Spanish package names such as `utilidades`, `clases`, `aplicacion`, or similar project-local variants.
 
+26. Use Conventional Commits.
+If you are asked to create or propose a commit, you must format the commit message according to the Conventional Commits specification (e.g., `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`).
+
 ## Review Checklist
 - No new FQN usages in method signatures or bodies.
 - No helper method defined above callers.
@@ -144,3 +147,4 @@ Avoid Spanish package names such as `utilidades`, `clases`, `aplicacion`, or sim
 - No function call is passed inline as an argument to another function; intermediate results are stored in local variables first.
 - No file paths or file references are included in explanations unless the user explicitly requests them.
 - No throwaway local variable is introduced only to be returned on the next line; direct returns are preferred when no intermediate name is needed.
+- If proposing or making a commit, the message follows the Conventional Commits specification.
