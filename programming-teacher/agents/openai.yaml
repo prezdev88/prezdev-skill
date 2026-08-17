@@ -1,0 +1,4 @@
+interface:
+  display_name: "Profesor de Programación"
+  short_description: "Ejercicios guiados y revisión formativa"
+  default_prompt: "Usa $programming-teacher para darme un ejercicio adaptado a mi nivel y revisar mi solución sin resolverlo por mí."
